@@ -12,7 +12,9 @@ restaurant_ratings = {}
 
 for line in file_lines:
 	entry = line.strip('\n').split(":")
-	restaurant_ratings[entry[0]] = entry[1]
+	name, score = entry
+	restaurant_ratings[name] = score
+	# restaurant_ratings[entry[0]] = entry[1]
 
 # Sort dictionary by key, alphabetically and print ratings in alphabetical order
 for key, value in sorted(restaurant_ratings.iteritems()):
