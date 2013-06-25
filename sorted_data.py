@@ -7,7 +7,7 @@ file_lines = file_text.readlines()
 # Close the file
 file_text.close()
 
-# Create dictionary key-value pair from each line-by-line
+# Create dictionary key-value pair from each line
 restaurant_ratings = {}
 
 for line in file_lines:
